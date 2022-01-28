@@ -8,7 +8,7 @@ const Movie = ({ id, coverImg, title, summary, genres }) => {
       <h2>
         <Link to={`/movie/${id}`}>{title}</Link>
       </h2>
-      <p>{summary}</p>
+      <p>{summary.length > 300 ? `${summary.slice(0, 300)}...` : summary}</p>
       <ul>{genres && genres.map((g) => <li key={g}>{g}</li>)}</ul>
     </div>
   );
