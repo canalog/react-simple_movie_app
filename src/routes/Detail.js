@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import styles from "./Detail.module.css";
+
+import MovieDetail from "../components/MovieDetail";
+import Loader from "../components/Loader";
+
 const Detail = () => {
   const [loading, setLoading] = useState(true);
   const [details, setDetails] = useState([]);
@@ -8,7 +13,7 @@ const Detail = () => {
     const json = await (
       await fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)
     ).json();
-    setDetails(json);
+    setDetails(json.data.movie);
     setLoading(false);
   };
 
@@ -16,26 +21,20 @@ const Detail = () => {
     getMovie();
   });
   return (
-    <div>
+    <div className={styles.container}>
       {loading ? (
-        <h1>Loading...</h1>
+        <Loader />
       ) : (
-        <div>
-          <img
-            src={details.data.movie.medium_cover_image}
-            alt={details.data.movie.title}
-          />
-          <h1>{details.data.movie.title_long}</h1>
-          <h3>Runtime : {details.data.movie.runtime}m</h3>
-          <h3>Rating : {details.data.movie.rating}</h3>
-          <h4>
-            Genres :{" "}
-            {details.data.movie.genres.map((g) => (
-              <li key={g}>{g}</li>
-            ))}
-          </h4>
-          <div>{details.data.movie.description_intro}</div>
-        </div>
+        <MovieDetail
+          medium_cover_image={details.medium_cover_image}
+          title={details.title}
+          year={details.year}
+          runtime={details.runtime}
+          language={details.language}
+          rating={details.rating}
+          genres={details.genres}
+          description={details.description_intro}
+        />
       )}
     </div>
   );

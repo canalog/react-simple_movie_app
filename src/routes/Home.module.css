@@ -1,0 +1,54 @@
+.container {
+  position: relative;
+  height: 100%;
+}
+
+.slider {
+  width: 1184px;
+  overflow: hidden;
+  position: relative;
+  left: calc(50% - 592px);
+}
+
+.movies {
+  width: 2960px;
+  padding: 50px 0 0 0;
+  display: flex;
+
+  transition: all 0.4s ease;
+}
+
+.slider__left,
+.slider__right {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 100px;
+  color: white;
+  transition: all 0.4s;
+}
+
+.slider__left:hover,
+.slider__right:hover {
+  cursor: pointer;
+}
+
+.slider__left {
+  /* text-shadow: 3px 2px 0 black; */
+  position: absolute;
+  top: calc(50% - 22px);
+  left: 80px;
+}
+
+.slider__right {
+  position: absolute;
+  top: calc(50% - 22px);
+  right: 80px;
+}
+
+@media screen and (max-width: 1090px) {
+  .movies {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}

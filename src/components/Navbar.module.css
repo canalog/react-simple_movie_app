@@ -1,0 +1,33 @@
+body a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 45px;
+}
+
+a:hover {
+  color: rgb(255, 238, 0);
+}
+.genres {
+  list-style: none;
+  padding: 0;
+  columns: 4;
+  -webkit-columns: 4;
+  -moz-columns: 4;
+}
+
+.genres li {
+  margin-right: 7px;
+  font-size: 16px;
+}
