@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/react-simple_movie_app/static/js/main.c80c24d8.js",
+    "index.html": "/react-simple_movie_app/index.html",
+    "main.c80c24d8.js.map": "/react-simple_movie_app/static/js/main.c80c24d8.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c80c24d8.js"
+  ]
+}
