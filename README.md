@@ -1,4 +1,4 @@
-# Movie Database Project
+# 🎬 Movie Database Project 🎬
 
 YTS movie API를 통해 영화 데이터를 가져와 정보를 볼 수 있는 웹 사이트
 ### Demo Link : https://canalog.github.io/react-simple_movie_app
