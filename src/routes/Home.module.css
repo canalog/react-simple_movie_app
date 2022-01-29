@@ -47,15 +47,14 @@
 }
 
 .slider__left {
-  /* text-shadow: 3px 2px 0 black; */
   position: absolute;
-  top: calc(50% - 22px);
+  top: 50%;
   left: 80px;
 }
 
 .slider__right {
   position: absolute;
-  top: calc(50% - 22px);
+  top: 50%;
   right: 80px;
 }
 
