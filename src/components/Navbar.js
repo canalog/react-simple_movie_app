@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
-import genres from "../Genres";
+import genres from "../GenreList";
 
 const Navbar = () => {
   return (
@@ -11,7 +11,7 @@ const Navbar = () => {
       <ul className={styles.genres}>
         {genres.map(({ title, path }) => (
           <li key={title}>
-            <Link to={`/${path}`}>{title}</Link>
+            <Link to={`/${path}/1`}>{title}</Link>
           </li>
         ))}
       </ul>

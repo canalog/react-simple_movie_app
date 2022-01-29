@@ -16,7 +16,7 @@ const Home = () => {
     setTransform((current) => current + 296);
   };
   const onRightClick = () => {
-    if (transform <= -2072) {
+    if (transform <= -4440) {
       return;
     }
     setTransform((current) => current - 296);
@@ -37,25 +37,28 @@ const Home = () => {
       {loading ? (
         <Loader />
       ) : (
-        <div className={styles.slider}>
-          <div
-            className={styles.movies}
-            style={{
-              transform: `translateX(${transform}px)`,
-            }}
-          >
-            {movies.map((movie) => (
-              <Movie
-                key={movie.id}
-                id={movie.id}
-                coverImg={movie.medium_cover_image}
-                title={movie.title}
-                year={movie.year}
-                rating={movie.rating}
-                genres={movie.genres}
-                summary={movie.summary}
-              />
-            ))}
+        <div className={styles.movie_home}>
+          <h1 className={styles.title}>Top-rated Movies</h1>
+          <div className={styles.slider}>
+            <div
+              className={styles.movies}
+              style={{
+                transform: `translateX(${transform}px)`,
+              }}
+            >
+              {movies.map((movie) => (
+                <Movie
+                  key={movie.id}
+                  id={movie.id}
+                  coverImg={movie.medium_cover_image}
+                  title={movie.title}
+                  year={movie.year}
+                  rating={movie.rating}
+                  genres={movie.genres}
+                  summary={movie.summary}
+                />
+              ))}
+            </div>
           </div>
         </div>
       )}

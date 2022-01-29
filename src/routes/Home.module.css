@@ -3,16 +3,29 @@
   height: 100%;
 }
 
+.movie_home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 .slider {
   width: 1184px;
   overflow: hidden;
   position: relative;
-  left: calc(50% - 592px);
+  /* left: calc(50% - 592px); */
+  margin-top: 30px;
 }
 
 .movies {
   width: 2960px;
-  padding: 50px 0 0 0;
   display: flex;
 
   transition: all 0.4s ease;

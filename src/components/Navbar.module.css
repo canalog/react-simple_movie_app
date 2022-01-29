@@ -16,9 +16,10 @@ body a {
   font-size: 45px;
 }
 
-a:hover {
-  color: rgb(255, 238, 0);
+.logo a:hover {
+  color: rgb(255, 230, 0);
 }
+
 .genres {
   list-style: none;
   padding: 0;
@@ -30,4 +31,9 @@ a:hover {
 .genres li {
   margin-right: 7px;
   font-size: 16px;
+  width: 90px;
+}
+
+.genres li a:hover {
+  color: rgba(256, 256, 256, 0.6);
 }
