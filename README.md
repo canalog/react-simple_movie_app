@@ -31,6 +31,7 @@ YTS movie API를 통해 영화 데이터를 가져와 정보를 볼 수 있는 �
     * [x] Movie Component Grid
     * [x] Page Route
     * [x] Showing Current Page
+    * [ ] Should be Responsive 
 
 6. Search
     * [ ] Showing search result
