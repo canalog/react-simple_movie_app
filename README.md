@@ -8,6 +8,7 @@ YTS movie API를 통해 영화 데이터를 가져와 정보를 볼 수 있는 �
 ## Functions
 
 1. Homepage
+    * [ ] Fetch Movie info from api with react-query
     * [x] Movie Slider
     * [x] Loader
     
@@ -30,7 +31,7 @@ YTS movie API를 통해 영화 데이터를 가져와 정보를 볼 수 있는 �
     * [x] Genre Title link
     * [x] Movie Component Grid
     * [x] Page Route
-    * [x] Showing Current Page
+    * [x] Showing Current Page → Change by using 'useMatch' from react-router-dom
     * [ ] Should be Responsive 
 
 6. Search
